@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom'; // useNavigate hook'unu import edin
+import { useNavigate, BrowserRouter } from 'react-router-dom'; // useNavigate hook'unu import edin
 import "./App.css";
 
 const kanjiData = [
