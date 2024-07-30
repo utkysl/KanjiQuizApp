@@ -1,0 +1,71 @@
+.full-height-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header-text {
+  font-size: 24px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.button-container {
+  display: flex; /* Butonları yan yana hizalamak için flex kullanın */
+  gap: 10px; /* Butonlar arasına boşluk ekleyin */
+  margin-bottom: 20px; /* Butonların altına boşluk ekleyin */
+}
+
+.navigate-button, .external-link-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigate-button:hover, .external-link-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.navigate-button:focus, .external-link-button:focus {
+  outline: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+  
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.kanji {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.meaning, .reading {
+  font-size: 14px;
+}
